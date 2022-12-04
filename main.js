@@ -25,3 +25,6 @@ function closeModal() {
   modal.classList.add("hide");
   modal.classList.remove("show");
 }
+
+// likes
+

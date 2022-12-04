@@ -254,6 +254,10 @@ body {
     background-color: var(--header-font-colour);
     height: 50px;
     border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
 }
 
 /* ------------------------main-sidebar------------------------- */
@@ -393,7 +397,7 @@ body {
     top: 0px;
 }
 
-.item-img-set .zoom {
+.zoom {
     border: 1px solid white;
     width: 30px;
     height: 30px;
@@ -403,14 +407,23 @@ body {
     background-position: center;
 }
 
-.item-img-set .like {
+.like {
     border: 1px solid white;
     width: 30px;
     height: 30px;
     margin: 10px;
-    background-image: url(../img/like.png);
+    /* background-image: url(../img/like.png); */
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.onlike {
+    background-color: #2c71b8;
+    background-image: url(../img/like2.png);
+}
+
+.ondeslike {
+    background-image: url(../img/like.png);
 }
 
 .item-description {
