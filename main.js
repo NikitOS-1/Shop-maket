@@ -26,5 +26,12 @@ function closeModal() {
   modal.classList.remove("show");
 }
 
-// likes
+// likes-item
 
+let likeBtn = document.querySelectorAll(".like");
+
+likeBtn.forEach((item) => {
+  item.addEventListener("click", function () {
+    item.classList.toggle("onlike");
+  });
+});

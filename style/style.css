@@ -412,7 +412,7 @@ body {
     width: 30px;
     height: 30px;
     margin: 10px;
-    /* background-image: url(../img/like.png); */
+    background-image: url(../img/like.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -420,10 +420,6 @@ body {
 .onlike {
     background-color: #2c71b8;
     background-image: url(../img/like2.png);
-}
-
-.ondeslike {
-    background-image: url(../img/like.png);
 }
 
 .item-description {
