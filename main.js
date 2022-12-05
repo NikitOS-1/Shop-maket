@@ -35,3 +35,11 @@ likeBtn.forEach((item) => {
     item.classList.toggle("onlike");
   });
 });
+
+function modalOnScroll() {
+  if (window.pageYOffset > document.body.scrollHeight / 2) {
+    openModal();
+    window.removeEventListener("scroll", modalOnScroll);
+  }
+}
+window.addEventListener("scroll", modalOnScroll);
