@@ -37,7 +37,7 @@ likeBtn.forEach((item) => {
 });
 
 function modalOnScroll() {
-  if (window.pageYOffset > document.body.scrollHeight / 2) {
+  if (window.scrollY > document.body.scrollHeight / 2) {
     openModal();
     window.removeEventListener("scroll", modalOnScroll);
   }
