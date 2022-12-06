@@ -250,11 +250,12 @@ body {
 
 /* ------------------------main------------------------- */
 /* ------------------------main-view------------------------- */
-.view-box {
+.slider-box {
     background-color: var(--header-font-colour);
-    height: 50px;
-    border: 1px solid white;
+    height: 200px;
+    /* border: 1px solid white; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: larger;
