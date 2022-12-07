@@ -249,17 +249,59 @@ body {
 }
 
 /* ------------------------main------------------------- */
-/* ------------------------main-view------------------------- */
+/* ------------------------main-slider------------------------- */
 .slider-box {
     background-color: var(--header-font-colour);
-    height: 200px;
-    /* border: 1px solid white; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
+    /* height: 200px; */
 }
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 100px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.slick-next,
+.slick-prev,
+.slick-next:focus,
+.slick-prev:focus {
+    width: 50px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.slick-prev,
+.slick-prev:focus,
+.slick-prev:hover {
+    background-image: url('../img/arrow-back.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+}
+
+.slick-next,
+.slick-next:focus,
+.slick-next:hover {
+    background-image: url('../img/arrow-next.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    right: -15px;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+    opacity: 0.4;
+}
+
 
 /* ------------------------main-sidebar------------------------- */
 .sidebar-box {
@@ -460,7 +502,15 @@ body {
     padding: 3px;
 }
 
-.item-price button {
+.item-price .btn-more-details {
+    width: 210px;
+    height: 50px;
+    margin: 7px;
+    font-weight: bold;
+    color: white;
+}
+
+.item-price .btn-add-to-card {
     width: 210px;
     height: 50px;
     margin: 7px;
@@ -481,6 +531,11 @@ body {
     background-repeat: no-repeat;
     background-position: right;
     background-position-x: 175px;
+}
+
+.item-price .product-count {
+    text-align: center;
+
 }
 
 /* ------------------------main-sidebar----------------------- */
