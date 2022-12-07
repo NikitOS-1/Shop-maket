@@ -559,7 +559,8 @@ body {
 .item-price .btn-more-details:hover {
     background-color: rgba(255, 255, 255, 0.353);
 }
-.item-price .btn-more-details:active{
+
+.item-price .btn-more-details:active {
     background-color: white;
     color: #2c71b8;
 }
@@ -578,7 +579,7 @@ body {
     background-color: rgba(255, 255, 255, 0.353);
 }
 
-.item-price .btn-add-to-card:active{
+.item-price .btn-add-to-card:active {
     background-color: white;
     color: #2c71b8;
 }
@@ -676,26 +677,51 @@ input[type="checkbox"]:checked+label::before {
     display: none;
     width: 300px;
     height: 400px;
-    background-color: rgb(174, 239, 134);
+    background-color: white;
+    opacity: 0.95;
     position: fixed;
     top: 100px;
     right: 0px;
     bottom: 0px;
-    left: 500px;
-    border: 2px solid black;
+    left: 550px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-box h5 {
+    margin: 30px 0px 15px 0px;
+    font-weight: bold;
+}
+
+.modal-box input {
+    margin-left: 15px;
+    padding-left: 5px;
+    height: 35px;
+}
+
+.modal-box button {
+    margin: 30px 0px 0px 15px;
+    width: 40%;
+    height: 50px;
 }
 
 .close {
+    float: right;
     margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
-    border: 1px solid black;
     font: bold;
     font-size: xx-large;
     cursor: pointer;
+}
+
+.clear {
+    content: "";
+    clear: both;
 }
 
 .show {
