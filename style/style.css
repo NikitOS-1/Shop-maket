@@ -282,7 +282,7 @@ body {
 .slick-prev,
 .slick-prev:focus,
 .slick-prev:hover {
-    background-image: url('../img/arrow-back.png');
+    background-image: url('../img/arrow-left.png');
     background-position: center;
     background-repeat: no-repeat;
     left: 0px;
@@ -292,7 +292,7 @@ body {
 .slick-next,
 .slick-next:focus,
 .slick-next:hover {
-    background-image: url('../img/arrow-next.png');
+    background-image: url('../img/arrow-right.png');
     background-position: center;
     background-repeat: no-repeat;
     right: -15px;
@@ -492,6 +492,14 @@ body {
     background-position: center;
 }
 
+.like:hover {
+    background-color: rgba(255, 255, 255, 0.228);
+}
+
+.zoom:hover {
+    background-color: rgba(255, 255, 255, 0.228);
+}
+
 .onlike {
     background-color: #2c71b8;
     background-image: url(../img/like2.png);
@@ -551,6 +559,10 @@ body {
 .item-price .btn-more-details:hover {
     background-color: rgba(255, 255, 255, 0.353);
 }
+.item-price .btn-more-details:active{
+    background-color: white;
+    color: #2c71b8;
+}
 
 .item-price .btn-add-to-card {
     background-color: rgba(86, 141, 198, 0.75);
@@ -566,6 +578,10 @@ body {
     background-color: rgba(255, 255, 255, 0.353);
 }
 
+.item-price .btn-add-to-card:active{
+    background-color: white;
+    color: #2c71b8;
+}
 
 .item-price .product-count {
     display: flex;
