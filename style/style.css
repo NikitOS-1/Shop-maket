@@ -286,6 +286,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     left: 0px;
+
 }
 
 .slick-next,
@@ -302,6 +303,37 @@ body {
     opacity: 0.4;
 }
 
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    background-color: white;
+}
+
+.slick-dots li {
+    width: max-content;
+    height: max-content;
+}
+
+.slick-dots .slick-active {
+    background-color: white;
+}
 
 /* ------------------------main-sidebar------------------------- */
 .sidebar-box {
@@ -502,14 +534,7 @@ body {
     padding: 3px;
 }
 
-.item-price .btn-more-details {
-    width: 210px;
-    height: 50px;
-    margin: 7px;
-    font-weight: bold;
-    color: white;
-}
-
+.item-price .btn-more-details,
 .item-price .btn-add-to-card {
     width: 210px;
     height: 50px;
@@ -523,6 +548,10 @@ body {
     border: 1px solid white;
 }
 
+.item-price .btn-more-details:hover {
+    background-color: rgba(255, 255, 255, 0.353);
+}
+
 .item-price .btn-add-to-card {
     background-color: rgba(86, 141, 198, 0.75);
     border: none;
@@ -533,9 +562,37 @@ body {
     background-position-x: 175px;
 }
 
-.item-price .product-count {
-    text-align: center;
+.item-price .btn-add-to-card:hover {
+    background-color: rgba(255, 255, 255, 0.353);
+}
 
+
+.item-price .product-count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-price .product-count button {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+.item-price .product-count input {
+    height: 20px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.365);
+    border-radius: 8px;
+    margin: 2px;
+    border: none;
+    padding-left: 10px;
+    font-weight: bold;
 }
 
 /* ------------------------main-sidebar----------------------- */
